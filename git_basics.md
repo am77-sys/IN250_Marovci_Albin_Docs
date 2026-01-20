@@ -39,3 +39,26 @@ Beobachtung:
 Mehrere lokale Repositories können mit demselben Remote verbunden sein.
 Nach einem Pull sind die Dateien im neuen Ordner identisch zum Remote-Stand.
 Wenn ich im alten Ordner vorher gepusht habe, sind diese Änderungen im neuen Ordner nach dem Pull sichtbar.
+Beobachtung:
+Beim Erstellen eines neuen lokalen Repositories mit `git init`
+wurde standardmässig der Branch `master` verwendet.
+Das bestehende GitHub-Repository nutzte jedoch den Branch `main`.
+
+Beim Pushen aus dem neuen Repository wurde deshalb ein zusätzlicher
+Branch `master` im Remote Repository erstellt.
+Git führt Branches nicht automatisch zusammen.
+
+
+## Aufgabe 6: Warum Git und warum zuerst Commit und Push?
+
+Git wird in der Softwareentwicklung eingesetzt, um Änderungen an Dateien
+nachvollziehbar zu versionieren. Es ermöglicht mehreren Personen gleichzeitig
+am selben Projekt zu arbeiten, Änderungen zu vergleichen und bei Fehlern
+auf frühere Versionen zurückzugehen. Dadurch wird die Zusammenarbeit
+strukturierter und sicherer.
+
+Im Fall eines Feuers sollte man zuerst einen `git commit` und danach einen
+`git push` ausführen, weil ein Commit die Änderungen lokal speichert und ein
+Push diese zusätzlich im Remote Repository sichert. Selbst wenn der lokale
+Rechner danach beschädigt wird, sind die Änderungen im Remote Repository
+weiterhin verfügbar.
