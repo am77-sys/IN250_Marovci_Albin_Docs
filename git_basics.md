@@ -30,3 +30,12 @@ Eingetragen habe ich:
 
 Danach habe ich die Datei committed ("Add gitignore") und auf GitHub gepusht.
 
+## Aufgabe 5: Zweites lokales Repository (git init)
+Ich habe in einem neuen Ordner ein lokales Repository mit `git init` erstellt.
+Danach habe ich das bestehende GitHub-Repository als Remote `origin` hinzugefügt.
+Mit `git pull origin main` habe ich den aktuellen Stand vom Remote heruntergeladen.
+
+Beobachtung:
+Mehrere lokale Repositories können mit demselben Remote verbunden sein.
+Nach einem Pull sind die Dateien im neuen Ordner identisch zum Remote-Stand.
+Wenn ich im alten Ordner vorher gepusht habe, sind diese Änderungen im neuen Ordner nach dem Pull sichtbar.
