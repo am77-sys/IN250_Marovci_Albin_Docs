@@ -21,3 +21,12 @@ Ich habe mein zuvor erstelltes Markdown Cheatsheet in den Ordner
 des geklonten Git-Repositories kopiert.
 Anschliessend habe ich die Datei zum Repository hinzugefügt und
 einen Commit mit der Nachricht "Initial commit" erstellt.
+
+## Aufgabe 4: .gitignore erstellen
+Ich habe eine .gitignore-Datei erstellt, um bestimmte Dateien dauerhaft vom Repository auszuschliessen.
+Eingetragen habe ich:
+- *.log
+- GeheimeBankInformationen.txt
+
+Danach habe ich die Datei committed ("Add gitignore") und auf GitHub gepusht.
+
